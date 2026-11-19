@@ -16,20 +16,8 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    const salonNumber = "917796926882";
-
-    const whatsappMessage = `Hello, I want to book an appointment.
-
-Name: ${name}
-Phone: ${phone}
-Service: ${service}
-Date: ${date}`;
-
-    const whatsappURL = `https://wa.me/${salonNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-    window.open(whatsappURL, "_blank");
-
-    message.textContent = "Your booking details are ready on WhatsApp!";
+    message.textContent =
+    "Thank you! Your demo booking has been received.";
 });
 
 
